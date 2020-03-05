@@ -1,33 +1,57 @@
 {
-    "name": "kirkbushell/eloquence",
-    "description": "A set of extensions adding additional functionality and consistency to Laravel's awesome Eloquent library.",
-    "keywords": ["laravel", "eloquent", "camelcase", "camel", "case", "snake_case", "snake"],
-    "authors": [
-        {
-            "name": "Kirk Bushell",
-            "email": "torm3nt@gmail.com"
-        }
-    ],
-    "require": {
-        "php": ">=7.0",
-        "hashids/hashids": "^1.0",
-        "illuminate/database": "~6.0",
-        "illuminate/support": "~6.0",
-        "ramsey/uuid": "^3.3",
-        "hanneskod/classtools": "~1.0"
-    },
-    "require-dev": {
-        "illuminate/events": "~6.0",
-        "mockery/mockery": "1.1.0",
-        "orchestra/testbench": "~4",
-        "phpunit/phpunit": "~8.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Eloquence\\": "src/",
-            "Tests\\": "tests/"
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+  "name": "kirkbushell/eloquence",
+  "description": "A set of extensions adding additional functionality and consistency to Laravel's awesome Eloquent library.",
+  "keywords": [
+    "laravel",
+    "eloquent",
+    "camelcase",
+    "camel",
+    "case",
+    "snake_case",
+    "snake"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kirk Bushell",
+      "email": "torm3nt@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "hanneskod/classtools": "dev-laravel-7-support",
+    "hashids/hashids": "^4.0",
+    "illuminate/database": "^7.0",
+    "illuminate/support": "^7.0",
+    "ramsey/uuid": "^3.3"
+  },
+  "require-dev": {
+    "illuminate/events": "^7.0",
+    "mockery/mockery": "^1.1.0",
+    "orchestra/testbench": "^5.0",
+    "phpunit/phpunit": "^9.0"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Eloquence\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/BenSampo/classtools"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
