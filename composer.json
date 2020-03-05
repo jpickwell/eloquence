@@ -36,6 +36,13 @@
     "preferred-install": "dist",
     "sort-packages": true
   },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Eloquence\\EloquenceServiceProvider"
+      ]
+    }
+  },
   "autoload": {
     "psr-4": {
       "Eloquence\\": "src/"
